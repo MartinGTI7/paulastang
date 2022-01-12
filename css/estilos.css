@@ -1,0 +1,243 @@
+*{margin:0; padding: 0; text-decoration: none; color: #f2f2f2;}
+
+body {
+    background: #dfdfdd;
+}
+
+header {
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo {
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 150px;
+    float: left;
+}
+
+header .logo:hover {
+    color: #f2f2f2;
+}
+
+header nav {
+    line-height: 150px;
+    float: right;
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 800ms ease;
+    -o-transition:all 800ms ease;
+    transition:all 800ms ease;
+}
+
+header nav a:hover {
+    background: #DA2D08;
+    border-radius: 50px;
+}
+
+/* ACA COMIENZA EL CARRUSEL DE IMAGENES */
+
+.banner {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.banner .carousel {
+    width: 300px;
+    margin: 10px auto 0;
+    padding-bottom: 10px;
+    overflow: visible;
+}
+
+.carousel img{
+    border-radius: 20%;
+    padding-bottom: 30px;
+}
+
+/* ACA COMIENZA LA GALERIA */
+
+.row .column img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    background-color: #222;
+    padding: 5px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 20%;
+    padding: 5px;
+}
+
+/* ACA COMIENZA EL PIE DE PAGINA */
+
+.pie-pagina {
+    width: 100%;
+    background-color: slategray;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    height: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(122, 136, 150);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #DA2D08;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgb(134, 147, 160);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+   
+/* MODIFICACIONES ADAPTATIVAS DEL HEADER */
+
+    header {
+        font-family: 'Titillium Web', sans-serif;
+        width: 100%;
+        overflow: hidden;
+        background: #252932;
+        margin-bottom: 5px;
+    }
+
+    header .logo {
+        color: #f2f2f2;
+        font-size: 40px;
+        line-height: 50px;
+        float: none;
+        text-align: center;
+    }
+    
+    header nav {
+        line-height: 50px;
+        float: none;
+        text-align: center;
+    }
+
+    header nav a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 5px;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        -webkit-transition:all 800ms ease;
+        -o-transition:all 800ms ease;
+        transition:all 800ms ease;
+    }
+
+/* MODIFICACIONES ADAPTATIVAS DEL BANNER */   
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        overflow: hidden;
+    }
+    
+    .banner .carousel {
+        position: relative;
+        width: 50%;
+        margin: 20px auto 0;
+        padding-bottom: 10px;
+        overflow: visible;
+    }
+
+/* MODIFICACIONES ADAPTATIVAS GALERIAS */
+
+    .column {
+        flex: 100%;
+    }
+
+/* MODIFICACIONES ADAPTATIVAS PIE DE PAGINA */
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        height: 180px;
+    }
+
+}
